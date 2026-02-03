@@ -45,7 +45,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - dbdata:/var/lib/mysql
+      - baltpoint-dbdata:/var/lib/mysql
     networks:
       - baltpoint
 
@@ -54,5 +54,5 @@ networks:
     driver: bridge
 
 volumes:
-  dbdata:
+  baltpoint-dbdata:
     driver: local
